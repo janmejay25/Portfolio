@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center; /* Keeps nav centered */
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+  }
+  
+  header aside {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    position: absolute;
+    left: 0;
+    margin-left: 0.5rem;
+  }
+  
+  header #mode {
+    background-color: #f1356d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+  }
+  
+  /* ✅ Center navbar but push links to the right */
+  nav {
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    padding: 10px 20px;
+    background-color: #fff;
+    width: 50%; 
+     /*Controls the width of the nav */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end; /* Moves only the items to the right */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  nav .tt{
+    padding: 0px 10px;
+    
+  }
+
+
+
+
+.main {
+    display: flex;
+    align-items: flex-start; /* Ensures the right section starts from the top */
+}
+.left {
+    width: 30%;
+    height: 100vh;
+    background: #f4f4f4;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+.right {
+    width: 70%;
+    padding: 20px;
+}
+.content {
+    height: 200vh; /* Just for demo */
+    background: lightgray;
+}
+.extra-content {
+    padding: 20px;
+    background: #ddd;
+}
+
+
+
+
+/* ✅ old css*/
+.profile-image {
+    background: linear-gradient(to bottom, #ff4500, #b22222);
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Name */
+  .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+    margin: 15px 0;
+  }
+  
+  /* Fire Icon */
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fire-icon {
+    font-size: 22px;
+    background: #ff6600;
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 20px;
+    line-height: 1.4;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    color: #ff4500;
+    font-size: 18px;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+
+
+/* ✅ old css  hero text*/
+#herotext{
+    /* margin-top: 100vh; */
+    border:2px solid coral;
+    /* height: 100vh; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-left: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  
+  /* Hero Heading */
+  #herotext h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+  /* Hero Description */
+  #herotext p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Download Button */
+  #herotext button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff6600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  #herotext button i {
+    font-size: 18px;
+  }
+  
+  #herotext button:hover {
+    background: #ff3300;
+  }
